@@ -48,6 +48,7 @@ public class CadastrarNovoCustomer {
 	public void validoAMensagemDeEnvio() {
 		hPages.validarMensagem("Your data has been successfully stored into the database. ");
 		
+		
 
 	}
 

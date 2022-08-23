@@ -17,15 +17,15 @@ public class ElementosWeb {
 	private By state = By.xpath("//*[@id='field-state']");
 	private By postalCode = By.xpath("//*[@id='field-postalCode']");
 	private By country = By.xpath("//*[@id='field-country']");
-	private By fromEmployeer = By.xpath("//select[@id='field-salesRepEmployeeNumber']");
+	private By fromEmployeer = By.xpath("//div[@class='chosen-container chosen-container-single']");
 	private By creditLimit = By.xpath("//*[@id='field-creditLimit']");
 	private By deleted = By.xpath("//*[@id='field-deleted']");
 
 	private By btnSave = By.xpath("//*[@id='form-button-save']");
 	private By btnSaveAndGo = By.xpath("//*[@id='save-and-go-back-button']");
 	private By btnCancel = By.xpath("//*[@id='cancel-button']");
-	private By msgSucesso = By.xpath("//div[@id='report-success']");
-	//span[text()='Select from Employeer']
+	private By msgSucesso = By.xpath("//div[@id='report-success']//p ");
+
 	public By getVersao() {
 		return versao;
 	}

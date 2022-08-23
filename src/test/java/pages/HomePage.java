@@ -29,13 +29,12 @@ public class HomePage {
 		metodos.escrever(elementos.getState(), dados.state);
 		metodos.escrever(elementos.getPostalCode(), dados.postalCode);
 		metodos.escrever(elementos.getCountry(), dados.country);
-		
-		metodos.scroll(0, 300);
-		metodos.esperarElemento(elementos.getFromEmployeer());
 
-		metodos.escreverPorTexto(elementos.getFromEmployeer(), "Bondur");
+		metodos.scroll(0, 300);
+
 		metodos.clicar(elementos.getFromEmployeer());
-		
+		metodos.getFromEmployeer("Bondur");
+
 		metodos.escrever(elementos.getCreditLimit(), dados.creditlimited);
 		metodos.escrever(elementos.getDeleted(), dados.deleted);
 		metodos.clicar(elementos.getBtnSave());
@@ -45,9 +44,8 @@ public class HomePage {
 	}
 
 	public void validarMensagem(String mensagem) {
-		metodos.esperarElemento(elementos.getMsgSucesso());
 		metodos.validarMsg(elementos.getMsgSucesso(), mensagem);
-		
+
 		metodos.tirarEvidencia("Mensagem de Sucesso");
 
 	}
